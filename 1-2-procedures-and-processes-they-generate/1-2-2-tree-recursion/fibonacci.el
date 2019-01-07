@@ -9,7 +9,7 @@
 
 
 (defun fib2 (n)
-	(fib2-iter 1 0 n))
+  (fib2-iter 1 0 n))
 
 (defun fib2-iter (a b count)
   (if (= count 0)
