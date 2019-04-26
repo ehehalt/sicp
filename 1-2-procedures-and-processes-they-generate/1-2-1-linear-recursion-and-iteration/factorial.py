@@ -20,3 +20,6 @@ def fact2Iter(product, counter, maxCount: int) -> int:
     else:
         return fact2Iter(counter*product, counter+1, maxCount)
 
+
+print(fact1(7))
+print(fact2(7))

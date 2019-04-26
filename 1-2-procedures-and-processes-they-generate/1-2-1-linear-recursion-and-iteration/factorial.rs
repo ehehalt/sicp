@@ -18,7 +18,7 @@ fn fact2iter(product: i64, counter: i64, max_count: i64) -> i64 {
     }
 }
 
-// fn main() {
-//     print!("{}\n", fact2(7));
-//     print!("{}\n", fact1(7));
-// }
+fn main() {
+    print!("{}\n", fact2(7));
+    print!("{}\n", fact1(7));
+}

@@ -17,3 +17,6 @@
     (fact2-iter (* counter product)
                 (+ counter 1)
                 max-count)))
+
+(message "%d" (fact1 7))
+(message "%d" (fact2 7))

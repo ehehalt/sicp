@@ -16,3 +16,7 @@ fact2iter product counter maxcount
   | counter > maxcount = product
   | otherwise = fact2iter (counter*product) (counter+1) maxcount
 
+
+main = do
+  print (fact1 7)
+  print (fact2 7)

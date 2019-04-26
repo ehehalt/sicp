@@ -1,6 +1,8 @@
 ;; SICP 1.2.1
 ;; Linear Recursion and Iteration
 
+#lang racket
+
 (define (fact1 n)
   (if (= n 1)
       1
@@ -17,3 +19,7 @@
     (fact2-iter (* counter product)
                 (+ counter 1)
                 max-count)))
+
+
+(print (fact1 7))
+(print (fact2 7))

@@ -19,3 +19,6 @@ def fact2iter(product, counter, maxcount)
   return fact2iter(counter*product, counter+1, maxcount)
 end
 
+
+puts fact1(7)
+puts fact2(7)

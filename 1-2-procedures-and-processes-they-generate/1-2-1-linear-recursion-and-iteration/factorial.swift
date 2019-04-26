@@ -20,3 +20,5 @@ func fact2(for n: Int) -> Int {
     return fact2Iter(1, 1, n)
 }
 
+print(fact1(for: 7))
+print(fact2(for: 7))

@@ -16,3 +16,5 @@ defmodule Math do
   
 end
 
+IO.puts(Math.fact1(7))
+IO.puts(Math.fact2(7))

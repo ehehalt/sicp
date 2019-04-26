@@ -28,6 +28,6 @@ func fact2iter(product int, counter int, maxcount int) int {
 }
 
 func main() {
-	fmt.Println(fact1(17))
-	fmt.Println(fact2(17))
+	fmt.Println(fact1(7))
+	fmt.Println(fact2(7))
 }
