@@ -21,5 +21,5 @@ def fact2(n: int) -> int:
             return fact2Iter(counter*product, counter+1, maxCount)
 
 
-            print(fact1(7))
-            print(fact2(7))
+print(fact1(7))
+print(fact2(7))
