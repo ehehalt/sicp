@@ -14,11 +14,11 @@ def fact1(n: int) -> int:
 def fact2(n: int) -> int:
     return fact2Iter(1, 1, n)
 
-    def fact2Iter(product, counter, maxCount: int) -> int:
-        if counter > maxCount:
-            return product
-        else:
-            return fact2Iter(counter*product, counter+1, maxCount)
+def fact2Iter(product, counter, maxCount: int) -> int:
+    if counter > maxCount:
+       return product
+    else:
+       return fact2Iter(counter*product, counter+1, maxCount)
 
 
 print(fact1(7))

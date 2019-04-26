@@ -13,8 +13,8 @@ fact2 n = fact2iter 1 1 n
 
 fact2iter :: Int -> Int -> Int -> Int
 fact2iter product counter maxcount
-| counter > maxcount = product
-| otherwise = fact2iter (counter*product) (counter+1) maxcount
+  | counter > maxcount = product
+  | otherwise = fact2iter (counter*product) (counter+1) maxcount
 
 
 main = do
