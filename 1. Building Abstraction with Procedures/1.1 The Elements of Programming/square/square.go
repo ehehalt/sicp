@@ -1,3 +1,6 @@
+// SICP 1.1.4
+// Compound Procedures
+
 package main
 
 import "fmt"
