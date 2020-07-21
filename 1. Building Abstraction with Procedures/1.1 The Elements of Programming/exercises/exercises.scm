@@ -13,3 +13,23 @@
   (cond ((and (< x y) (< x z)) (sum-of-squares y z))
         ((and (< y x) (< y z)) (sum-of-squares x z))
         (else (sum-of-squares x y))))
+
+;; Exercise 1.4
+;; Observe that our model of evaluation allows for combinations whose operators
+;; are compound expressions. Use this observation to describe the behavior of the
+;; following procedure
+
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
+
+;; (a-plus-abs-b 1 3)
+;; ((if (> 3 0) + -) 1 3)
+;; ((if #t + -) 1 3)
+;; (+ 1 3)
+;; 4
+
+;; (a-plus-abs-b 1 -3)
+;; ((if (> -3 0) + -) 1 -3)
+;; ((if #f + -) 1 -3)
+;; (- 1 -3)
+;; 4
