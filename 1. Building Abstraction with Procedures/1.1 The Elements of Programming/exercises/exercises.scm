@@ -33,3 +33,24 @@
 ;; ((if #f + -) 1 -3)
 ;; (- 1 -3)
 ;; 4
+
+;; Exercise 1.7
+;; Design a square-root procedure that use as test when the change from a guess to
+;; the next is a very small fraction of the guess
+
+(define (sqrt-iter guess old-guess x)
+  (if (good-enough? guess old-guess)
+      guess
+      (sqrt-iter (improve guess x) guess x)))
+
+(define (improve guess x)
+  (average guess (/ x guess)))
+
+(define (average x y)
+  (/ (+ x y) 2))
+
+(define (good-enough? guess old-guess)
+  (< (/ (abs (- guess old-guess)) guess) 0.00001))
+
+(define (sqrt x)
+  (sqrt-iter 1.0 0.0 x))
