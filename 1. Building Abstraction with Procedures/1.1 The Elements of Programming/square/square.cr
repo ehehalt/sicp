@@ -1,5 +1,5 @@
 # SICP 1.1.4
-# Compoind Procedures
+# Compound Procedures
 
 def square(x)
   x * x
